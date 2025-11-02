@@ -4,6 +4,7 @@ import './styles/global.css';
 // Pages
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import Orders from './pages/Orders';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Routes>
           <Route path='/login' element={<Login />} />
           <Route path='/dashboard' element={<Dashboard />} >
-            <Route path='pedidos' element={<p>Pedidos</p>} />
+            <Route path='pedidos' element={<Orders />} />
             <Route path='produtos' element={<p>Produtos</p>} />
             <Route path='avaliacoes' element={<p>Avaliacoes</p>} />
             <Route path='configuracoes' element={<p>Configuracoes</p>} />
