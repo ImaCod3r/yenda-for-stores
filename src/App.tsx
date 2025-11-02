@@ -5,6 +5,7 @@ import './styles/global.css';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Orders from './pages/Orders';
+import Products from './pages/Products';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/dashboard' element={<Dashboard />} >
             <Route path='pedidos' element={<Orders />} />
-            <Route path='produtos' element={<p>Produtos</p>} />
+            <Route path='produtos' element={<Products />} />
             <Route path='avaliacoes' element={<p>Avaliacoes</p>} />
             <Route path='configuracoes' element={<p>Configuracoes</p>} />
           </Route>
@@ -22,4 +23,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

@@ -27,6 +27,23 @@ export default function Orders() {
             <p>Cancelados</p>
         </div>
       </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Pedido</th>
+            <th>Cliente</th>
+            <th>Data</th>
+            <th>Status</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colSpan={5}>Nenhum pedido encontrado.</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }
